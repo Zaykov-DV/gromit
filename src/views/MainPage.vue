@@ -134,8 +134,8 @@ const openInfo = async (id: string) => {
       </div>
     </BaseTable>
     <div class="main__buttons">
-      <button class="main__button" @click="page--" v-if="data?.info.prev">Prev</button>
-      <button @click="page++" v-if="data?.info.next">Next</button>
+      <button class="main__button" @click="page--" v-if="data?.info?.prev">Prev</button>
+      <button @click="page++" v-if="data?.info?.next">Next</button>
     </div>
   </main>
   <Popup v-if="popupTriggers.tableRowTrigger"
